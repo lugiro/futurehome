@@ -1,5 +1,5 @@
 # Futurehome og Raspberry Pi
-Innholdet her viser en enkel måte for å motta/sende data fra/til Futurehome HUB med MQTT for overføring til Raspberry Pi  
+Her vises en enkel måte for å motta/sende data fra/til Futurehome HUB med MQTT for overføring til Raspberry Pi  
 
 Du trenger:<br>
 Futurehome HUB 2<br>
