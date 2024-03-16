@@ -1,6 +1,8 @@
 # futurehome
-Innholdet viser en enkel måte får å hente data fra Futurehome HUB med MQTT for overføring til Raspberry Pi
+Innholdet viser en enkel måte får å hente data fra Futurehome HUB med MQTT for overføring til Raspberry Pi  
+
 Du trenger:
+
 Futurehome HUB 2
 Raspberri Pi 3B
 Mac/PC
