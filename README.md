@@ -33,7 +33,7 @@ Installer følgende på Raspberry Pi:<br>
 Mosquitto, mosquitto_pub og mosquitto_sub<br>
 Kjør så CLI-kommandi vist over fra Raspberry Pi<br>
 mosquitto_sub står så å lytter på port 1884 og innkommende telgram med FIMP-format vises, bl.a. kWh-verdi fra stikkontakt.<br>
-FIMP-format er beskrevet her 
+FIMP-format er beskrevet her: https://github.com/futurehomeno/fimp-api
 
 
 
