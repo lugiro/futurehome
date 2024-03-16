@@ -21,9 +21,9 @@ Typiske nettverk vil være 192.168.1.x eller 10.0.0.x<br>
 
 Installer MQTT Explorer på Mac/PC<br>
 Logg inn på MQTT Explorer med min_bruker og mitt_passord og benytte port 1884.<br>
-I venstre vindu i Explorer vises alle enhter og deres data, finn kWh-måling for ad:10_0 og klikk på linjen.<br>
+I venstre vindu i Explorer vises alle enheter og deres data, finn kWh-måling for ad:10_0 og klikk på linjen.<br>
 På høyre side oppe klikk på første symbol til høyre for Topic (Copy to clipboard).<br>
-Aktuell topic for kWh-måling er da funnet.<br>
+Aktuell topic for kWh-måling er da funnet, benyttes etter -t under<br>
 
 Bygg så opp følgende CLI-kommand (som senere skal benyttes i Raspberry Pi):<br>
 mosquitto_sub -h IP_adr_FuturehomeHUB -p 1884 -u min_bruker -P mitt_passord -t pt:j1/mt:evt/rt:dev/rn:zw/ad:1/sv:meter_elec/ad:10_0<br>
@@ -33,6 +33,7 @@ Installer følgende på Raspberry Pi:<br>
 Mosquitto, mosquitto_pub og mosquitto_sub<br>
 Kjør så CLI-kommandi vist over fra Raspberry Pi<br>
 mosquitto_sub står så å lytter på port 1884 og innkommende telgram med FIMP-format vises, bl.a. kWh-verdi fra stikkontakt.<br>
+FIMP-format er beskrevet her 
 
 
 
