@@ -6,7 +6,7 @@ Futurehome HUB 2<br>
 Raspberry Pi 3B<br>
 Mac/PC<br><br>
 
-Installer Futurehome.<br> 
+**Installer Futurehome.**<br> 
 I app gå til Verktøy>husholdning>HUB-INSTILLINGE>LOKALT API OPPSETT<br>
 Opprett bruker og passord og trykk lagre (benytter her min_bruker og mitt_passord)<br>
 
@@ -25,16 +25,15 @@ I venstre vindu i Explorer vises alle enheter og deres data, finn kWh-måling fo
 På høyre side oppe klikk på første symbol til høyre for Topic (Copy to clipboard).<br>
 Aktuell topic for kWh-måling er da funnet, benyttes etter -t under<br>
 
-Bygg så opp følgende CLI-kommand (som senere skal benyttes i Raspberry Pi):<br>
+Bygg så opp følgende CLI-kommand (som senere skal benyttes i fil **kwh_mosquitto_loop_V1.sh** i Raspberry Pi):<br>
 mosquitto_sub -h IP_adr_FuturehomeHUB -p 1884 -u min_bruker -P mitt_passord -t pt:j1/mt:evt/rt:dev/rn:zw/ad:1/sv:meter_elec/ad:10_0<br>
 
 Benytt ssh mot Raspberry Pi fra Mac (evt. PC)<br>
 Installer følgende på Raspberry Pi:<br>
 Mosquitto, mosquitto_pub og mosquitto_sub<br>
-Kjør så CLI-kommandi vist over fra Raspberry Pi<br>
-mosquitto_sub står så å lytter på port 1884 og innkommende telgram med FIMP-format vises, bl.a. kWh-verdi fra stikkontakt.<br>
+Kjør så CLI-kommandi **./kwh_mosquitto_loop_V1.sh**<br>
+mosquitto_sub står så å lytter på port 1884 og innkommende telgram med FIMP-format vises, bl.a. tid og kWh-verdi fra stikkontakt.<br>
 FIMP-format er beskrevet her: https://github.com/futurehomeno/fimp-api
-
 
 OBS! Programvaren brukes på eget ansvar og utgiver tar ikke noe ansvar for eventuell skade som kan skje ved bruk av programvaren.
 
