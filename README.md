@@ -17,7 +17,7 @@ Data mottas/sendes fra/til Futurehome HUB, med MQTT, fra/til Raspberry Pi
 Installer Futurehome HUB og last ned Futurehome app på telefon<br>
 I app gå til Verktøy>husholdning>HUB-INSTILLINGE>LOKALT API OPPSETT<br>
 Opprett bruker og passord for API og trykk lagre<br>
-Benytter videre her **min_bruker** og **mitt_passord**<br>
+Benytter videre her **min_API_bruker** og **mitt_API_passord**<br>
 
 ***Legg til en enhet i Futurehome***<br>
 I dette eksempelet er det benyttet en stikkontakt med kWh-måling, fra Cleverio, On/Off Receiver, med Zwave. <br>
@@ -31,14 +31,14 @@ Typiske nettverk vil være 192.168.1.x eller 10.0.0.x<br>
 
 ***Installer MQTT Explorer på Mac/PC***<br>
 MQTT Explorer er et program som viser MQTT data, se http://mqtt-explorer.com<br>
-Logg inn på MQTT Explorer med **min_bruker** og **mitt_passord** og benytt port 1884<br>
+Logg inn på MQTT Explorer med **min_API_bruker** og **mitt_API_passord** og benytt port 1884<br>
 I venstre vindu i Explorer vises alle enheter og deres data, finn kWh-måling for ad:10_0 og klikk på linjen<br>
 På høyre side oppe klikk på første symbol til høyre for Topic (Copy to clipboard).<br>
 Aktuell topic for kWh-måling er da funnet, benyttes etter -t i CLI-kommando under<br>
 
 ***CLI-kommando***<br>
 Bygg så opp følgende CLI-kommando, som senere skal benyttes i filen **kwh_mosquitto_loop_V1.sh** i Raspberry Pi:<br>
-**mosquitto_sub -h IP_adr_FuturehomeHUB -p 1884 -u min_bruker -P mitt_passord -t pt:j1/mt:evt/rt:dev/rn:zw/ad:1/sv:meter_elec/ad:10_0**<br>
+**mosquitto_sub -h IP_adr_FuturehomeHUB -p 1884 -u min_API_bruker -P mitt_API_passord -t pt:j1/mt:evt/rt:dev/rn:zw/ad:1/sv:meter_elec/ad:10_0**<br>
 Kommando henter kWh-verdi fra stikkontakt<br>
 
 ***Mosquitto***<br>
@@ -50,12 +50,14 @@ For hjelp google **mosquitto on Raspberry Pi**<br>
 ***Henta data fra Futurehome HUB***<br>
 Henter kWh-data fra stikkontakt
 Last ned scriptfil **kwh_mosquitto_loop_V1.sh** og endre nødvendige parametre<br>
+Husk chmod +x kwh_mosquitto_loop_V1.sh<br>
 Start script **./kwh_mosquitto_loop_V1.sh**
 mosquitto_sub står nå og lytter på port 1884 for innkommende telgram i FIMP-format, bl.a. tid og kWh-verdi fra stikkontakt.<br>
 
 ***Sende data til Futurehome HUB***
 Styrer stikkontakt ON/OFF
 Last ned scriptfi **on_off_mosquitto_V1.sh** og endre nødvendige parametre<br>
+Husk chmod +x on_off_mosquitto_V1.sh<br>
 Start script **./on_off_mosquitto_V1.sh**<br>
 I scriptfil:<br> 
 **val** lik **true**  gir stikkontakt ON<br>
