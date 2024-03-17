@@ -52,7 +52,7 @@ For hjelp google **mosquitto on Raspberry Pi**<br>
 Henter kWh-data fra stikkontakt
 Last ned scriptfil **kwh_mosquitto_loop_V1.sh** og endre nødvendige parametre<br>
 Husk chmod +x kwh_mosquitto_loop_V1.sh<br>
-Start script **./kwh_mosquitto_loop_V1.sh**
+Start script **./kwh_mosquitto_loop_V1.sh**<br>
 mosquitto_sub står nå og lytter på port 1884 for innkommende telgram i FIMP-format, bl.a. tid og kWh-verdi fra stikkontakt.<br>
 
 ***Sende data til Futurehome HUB***
