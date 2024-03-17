@@ -55,8 +55,8 @@ Husk chmod +x kwh_mosquitto_loop_V1.sh<br>
 Start script **./kwh_mosquitto_loop_V1.sh**<br>
 mosquitto_sub står nå og lytter på port 1884 for innkommende telgram i FIMP-format, bl.a. tid og kWh-verdi fra stikkontakt.<br>
 
-***Sende data til Futurehome HUB***
-Styrer stikkontakt ON/OFF
+***Sende data til Futurehome HUB***<br>
+Styrer stikkontakt ON/OFF<br>
 Last ned scriptfi **on_off_mosquitto_V1.sh** og endre nødvendige parametre<br>
 Husk chmod +x on_off_mosquitto_V1.sh<br>
 Start script **./on_off_mosquitto_V1.sh**<br>
