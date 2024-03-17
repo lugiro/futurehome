@@ -9,8 +9,9 @@ Data mottas/sendes fra/til Futurehome HUB, med MQTT, fra/til Raspberry Pi
 
 ***Forutsetninger***<br>
 - Kunnskap om Raspberry Pi og installasjon<br>
+- Bruk av **ssh* (Secure Shell)
 - Bruk av CLI (Command Line Interface)<br>
-- Linux kommandoer og bruk av ssh<br>
+- Linux kommandoer<br>
 - Litt forståelse av API (Application Programming Interface)<br>
 - Litt forståelse av MQTT (Message Queuing Telemetry Transport)<br>
 
@@ -43,13 +44,11 @@ Bygg så opp følgende CLI-kommando, som senere skal benyttes i filen **kwh_mosq
 Kommando henter kWh-verdi fra stikkontakt<br>
 
 ***Mosquitto***<br>
-Benytt **ssh** mot Raspberry Pi fra Mac/PC<br>
-Installer følgende på Raspberry Pi:<br>
-Mosquitto, mosquitto_pub og mosquitto_sub<br>
+Installer Mosquitto på Raspberry Pi (mosquitto_pub og mosquitto_sub)<br>
 For hjelp google **install mosquitto on Raspberry Pi**<br>
 
 ***Henta data fra Futurehome HUB***<br>
-Henter kWh-data fra stikkontakt
+Henter kWh-data fra stikkontakt<br>
 Last ned scriptfil **kwh_mosquitto_loop_V1.sh** og endre nødvendige parametre<br>
 Husk chmod +x kwh_mosquitto_loop_V1.sh<br>
 Start script **./kwh_mosquitto_loop_V1.sh**<br>
