@@ -36,4 +36,7 @@ mosquitto_sub står så å lytter på port 1884 og innkommende telgram med FIMP-
 FIMP-format er beskrevet her: https://github.com/futurehomeno/fimp-api
 
 
+OBS! Programvaren brukes på eget ansvar og utgiver tar ikke noe ansvar for eventuell skade som kan skje ved bruk av programvaren.
+
+
 
