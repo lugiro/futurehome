@@ -34,7 +34,7 @@ Typiske nettverk vil være 192.168.1.x eller 10.0.0.x<br>
 MQTT Explorer er et program som viser MQTT data, se http://mqtt-explorer.com<br>
 Logg inn på MQTT Explorer med **min_API_bruker** og **mitt_API_passord** og benytt port 1884<br>
 I venstre vindu i Explorer vises alle enheter og deres data, finn kWh-måling for ad:10_0 og klikk på linjen<br>
-På høyre side oppe klikk på første symbol til høyre for Topic (Copy to clipboard).<br>
+På høyre side oppe, klikk på første symbol til høyre for Topic (Copy to clipboard).<br>
 Aktuell topic for kWh-måling er da funnet, benyttes etter -t i CLI-kommando under<br>
 
 ***CLI-kommando***<br>
@@ -46,7 +46,7 @@ Kommando henter kWh-verdi fra stikkontakt<br>
 Benytt **ssh** mot Raspberry Pi fra Mac/PC<br>
 Installer følgende på Raspberry Pi:<br>
 Mosquitto, mosquitto_pub og mosquitto_sub<br>
-For hjelp google **mosquitto on Raspberry Pi**<br>
+For hjelp google **install mosquitto on Raspberry Pi**<br>
 
 ***Henta data fra Futurehome HUB***<br>
 Henter kWh-data fra stikkontakt
@@ -57,7 +57,7 @@ mosquitto_sub står nå og lytter på port 1884 for innkommende telgram i FIMP-f
 
 ***Sende data til Futurehome HUB***<br>
 Styrer stikkontakt ON/OFF<br>
-Last ned scriptfi **on_off_mosquitto_V1.sh** og endre nødvendige parametre<br>
+Last ned scriptfil **on_off_mosquitto_V1.sh** og endre nødvendige parametre<br>
 Husk chmod +x on_off_mosquitto_V1.sh<br>
 Start script **./on_off_mosquitto_V1.sh**<br>
 I scriptfil:<br> 
