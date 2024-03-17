@@ -3,21 +3,21 @@ Her vises en enkel kommunikasjon mellom Futurehome HUB og Raspberry Pi<br>
 Data mottas/sendes fra/til Futurehome HUB, med MQTT, fra/til Raspberry Pi  
 
 ***Du trenger***<br>
-Futurehome HUB 2<br>
-Raspberry Pi 3B<br>
-Mac/PC<br>
+- Futurehome HUB 2<br>
+- Raspberry Pi 3B<br>
+- Mac/PC<br>
 
-***Forutsetning***
-Kunnskap om Raspberry Pi og installasjon<br>
-Bruk av CLI (Command Line Interface)<br>
-Linux kommandoer og bruk av ssh<br>
-Litt forståelse av API (Application Programming Interface)<br>
+***Forutsetninger***<br>
+- Kunnskap om Raspberry Pi og installasjon<br>
+- Bruk av CLI (Command Line Interface)<br>
+- Linux kommandoer og bruk av ssh<br>
+- Litt forståelse av API (Application Programming Interface)<br>
 
 ***Installer Futurehome***<br>
 Installer Futurehome HUB og last ned Futurehome app på telefon<br>
 I app gå til Verktøy>husholdning>HUB-INSTILLINGE>LOKALT API OPPSETT<br>
 Opprett bruker og passord for API og trykk lagre<br>
-Benytter her **min_bruker** og **mitt_passord**<br>
+Benytter videre her **min_bruker** og **mitt_passord**<br>
 
 ***Legg til en enhet i Futurehome***<br>
 I dette eksempelet er det benyttet en stikkontakt med kWh-måling, fra Cleverio, On/Off Receiver, med Zwave. <br>
@@ -30,8 +30,9 @@ Bruk et passende nettverksprogram for å finne IP-adresse for FuturehomeHUB, IP-
 Typiske nettverk vil være 192.168.1.x eller 10.0.0.x<br>
 
 ***Installer MQTT Explorer på Mac/PC***<br>
-Logg inn på MQTT Explorer med **min_bruker** og **mitt_passord** og benytt port 1884.<br>
-I venstre vindu i Explorer vises alle enheter og deres data, finn kWh-måling for ad:10_0 og klikk på linjen.<br>
+MQTT Explorer er et program som viser MQTT data, se http://mqtt-explorer.com<br>
+Logg inn på MQTT Explorer med **min_bruker** og **mitt_passord** og benytt port 1884<br>
+I venstre vindu i Explorer vises alle enheter og deres data, finn kWh-måling for ad:10_0 og klikk på linjen<br>
 På høyre side oppe klikk på første symbol til høyre for Topic (Copy to clipboard).<br>
 Aktuell topic for kWh-måling er da funnet, benyttes etter -t i CLI-kommando under<br>
 
