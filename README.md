@@ -9,7 +9,7 @@ Data mottas/sendes fra/til Futurehome HUB, med MQTT, fra/til Raspberry Pi
 
 ***Forutsetninger***<br>
 - Kunnskap om Raspberry Pi og installasjon<br>
-- Bruk av **ssh* (Secure Shell)
+- Bruk av **ssh** (Secure Shell)
 - Bruk av CLI (Command Line Interface)<br>
 - Linux kommandoer<br>
 - Litt forståelse av API (Application Programming Interface)<br>
