@@ -7,6 +7,12 @@ Futurehome HUB 2<br>
 Raspberry Pi 3B<br>
 Mac/PC<br>
 
+***Forutsetning***
+Kunnskap om Raspberry Pi og installasjon<br>
+Bruk av CLI (Command Line Interface)<br>
+Linux kommandoer og bruk av ssh<br>
+Litt forståelse av API (Application Programming Interface)<br>
+
 ***Installer Futurehome***<br>
 Installer Futurehome HUB og last ned Futurehome app på telefon<br>
 I app gå til Verktøy>husholdning>HUB-INSTILLINGE>LOKALT API OPPSETT<br>
