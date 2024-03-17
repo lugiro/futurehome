@@ -12,6 +12,7 @@ Data mottas/sendes fra/til Futurehome HUB, med MQTT, fra/til Raspberry Pi
 - Bruk av CLI (Command Line Interface)<br>
 - Linux kommandoer og bruk av ssh<br>
 - Litt forståelse av API (Application Programming Interface)<br>
+- Litt forståelse av MQTT (Message Queuing Telemetry Transport)<br>
 
 ***Installer Futurehome***<br>
 Installer Futurehome HUB og last ned Futurehome app på telefon<br>
