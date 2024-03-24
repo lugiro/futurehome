@@ -63,19 +63,18 @@ I scriptfil:<br>
 **val** lik **true**  gir stikkontakt ON<br>
 **val** lik **false** gir stikkontakt OFF<br>
 
-FIMP-format er beskrevet her: https://github.com/futurehomeno/fimp-api
-
+FIMP-format er beskrevet her: https://github.com/futurehomeno/fimp-api<br><br>
 
 ***Hvordan finne ip-adresse for Futurehome HUB***<br>
 Koble opp en Raspberry Pi i samme lokale nettverk som Futurehome HUB står i.<br>
 Programmet **fh_get_ip_adr_v01.py** kjøres fra Raspberry Pi i CLI.<br>
 
 Dersom lokal ruter benytter DHCP for å bestemme ip-adresse for Futurehome HUB<br>
-kan python program **fh_get_ip_adr_v01.py** benyttes både til å finne ip-adresse i utgangspunktet,
+kan python program **fh_get_ip_adr_v01.py** benyttes både til å finne ip-adresse i utgangspunktet,<br>
 og også for å finne ny ip-adresse dersom denne endres.<br>
 I detter eksempelet benyttes ip segment 192.168.1.x<br>
 
-Det må installes nmap pg netcat for å benytte programmet.<br>
+Det må installes nmap pg netcat for å benytte programmet.<br><br>
 
 OBS! Programvaren brukes på eget ansvar og utgiver tar ikke noe ansvar for eventuell skade som kan skje ved bruk av programvaren.
 
